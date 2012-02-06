@@ -12,6 +12,14 @@ module RailsAdmin
       module Types
         class NameField < RailsAdmin::Config::Fields::Base
           RailsAdmin::Config::Fields::Types::register(self)
+          
+          register_instance_option(:middle_name_field) do
+            :middle_name
+          end
+          
+          register_instance_option(:last_name_field) do
+            :last_name
+          end
         end
       end
     end
